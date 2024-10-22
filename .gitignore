@@ -2,6 +2,10 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+mvnw
+mvnw.cmd
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
@@ -36,3 +40,19 @@ build/
 
 ### Mac OS ###
 .DS_Store
+**/.DS_Store
+
+.idea/
+application.properties
+application.yml
+/local.properties
+
+
+/logs/
+*.log
+/out/
+
+/test-output/
+
+/node_modules/
+

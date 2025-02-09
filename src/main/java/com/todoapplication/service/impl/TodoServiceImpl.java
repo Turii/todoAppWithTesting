@@ -24,7 +24,7 @@ public class TodoServiceImpl implements TodoService {
         todoEntity.setAssignedTo(todo.getAssignedTo());
         todoEntity.setStatus(todo.getStatus());
         todoEntity.setDueDate(todo.getDueDate());
-    // Збереження в базі        todoDao.save(todoEntity);
+        todoDao.save(todoEntity); // Збереження в базі
     // Повернення створеного об'єкту
         return todo;
 }

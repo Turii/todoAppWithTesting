@@ -6,8 +6,10 @@ import com.todoapplication.exception.BadRequestException;
 import com.todoapplication.exception.ResourceNotFoundException;
 import com.todoapplication.service.TodoService;
 import com.todoapplication.vo.TodoVO;
-import org.springframework.beans.factory.annotation.Autowired;import org.springframework.stereotype.Service;
-import java.util.List;import java.util.stream.Collectors;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import java.util.List;
+import java.util.stream.Collectors;
 @Service
 public class TodoServiceImpl implements TodoService {
     @Autowired

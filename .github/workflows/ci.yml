@@ -9,12 +9,12 @@ on:
       - main
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
       # 1. Checkout code
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
       # 2. Set up JDK
@@ -35,7 +35,9 @@ jobs:
 
       # 4. Run Maven tests (includes RestAssured tests)
       - name: Build with Maven and run tests
-        run: mvn clean install
+        run: mvn test
+        env:
+          SPRING_PROFILES_ACTIVE: test
 
       # 5. Archive test results
       - name: Archive test reports
